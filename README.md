@@ -14,3 +14,14 @@ We can declare multiple state variables by calling useState multiple times.
 - `const [var2, setVar2] = useState(initialValue)`
 - `const [var3, setVar3] = useState(initialValue)`
 
+## Initializing State
+Syntax: `const [currentState, setterFun] = useState(initialValue)`
+The initial value provided to the useState() can be of any data type.
+
+## Providing Object as an initial value
+As a best practice, we can provide Object as an initial value when we want to store values that tend to change together.
+- `const [comment, setComment] = useState({ name: "", commentText: "" })`
+
+## Providing Array as an initial value
+We can provide the array as an initial value to **useState()**.
+- `const [commentsList, setCommentsList] = useState([])`
